@@ -64,6 +64,7 @@ func infoServer(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "\n\nTest with GitLab auth revoked.")
 	fmt.Fprintln(w, "\n\nA test for teams")
 	fmt.Fprintln(w, "\n\nremoved and readded")
+	fmt.Fprintln(w, "\n\nrevoked and reauthed gh app")
 	fmt.Fprintln(w, "\n\nRuntime Environment Variables:")
 	for _, e := range os.Environ() {
 		fmt.Fprintln(w, e)
